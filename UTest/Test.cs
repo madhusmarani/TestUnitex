@@ -36,7 +36,7 @@ namespace UTest
 
             ServerSideDataMock.Verify(m => m.GetJsonData(), Times.Once());
 
-            Assert.IsNotNull(testVm.Data);
+            Assert.IsNull(testVm.Data);
         }
     }
 }
